@@ -1,0 +1,17 @@
+#playingBoard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    width:300px;
+    height:300px;
+    background-color: white;
+}
+
+.square {
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
