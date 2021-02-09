@@ -1,5 +1,99 @@
-#playingBoard {
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+
+    font-family: 'Press Start 2P', cursive;
+    background-color: #fcf7e8;
+    color: #ce4d41;
+}
+
+input[type='text'] {
+    width: 33%;
+}
+
+input[type='radio'] {
+    margin: 0px 0px 10px 0px;
+}
+
+button {
+    padding: 10px;
+    font-family: inherit;
+}
+
+#Player-1-form {
+    height: fit-content;
+    place-self:center stretch;
+    grid-area: leftSide;
+    
+}
+
+#Player-2-form {
+    height: fit-content;
+    place-self:center stretch;
+    grid-area: rightSide;
+}
+
+#startGameButton {
+    place-self: center;
+    width: fit-content;
+    grid-area: footer;
+}
+#playersFormContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#gameFormContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.playersForm > div{
+    padding-bottom:10px;
+}
+#playersForm {
+    justify-items: center;
+    width: 600px;
+    height: 300px;
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr, 1fr;
+    grid-template-areas:
+    "leftSide rightSide"
+    "footer footer"
+}
+
+#gameForm {
+    display: grid;
+    grid-template-areas:
+    "display"
+    "board"
+    "buttons"
+}
+
+
+#playingBoard {
+    grid-area: board;
+}
+
+#display {
+    grid-area: display;
+    place-self: center;
+    padding-bottom: 10px;
+}
+
+#gameButtons {
+    grid-area: buttons;
+    place-self: center;
+    padding-top: 10px;
+}
+
+header{
+    text-align:center;
+}
+#playingBoard {
+
+    display: none;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     column-gap: 10px;
@@ -7,6 +101,10 @@
     width:300px;
     height:300px;
     background-color: white;
+}
+
+#gameButtons {
+    display:none;
 }
 
 .square {

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>The HTML5 Herald</title>
+  <title>tic-tac-toe</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
@@ -13,8 +13,52 @@
 </head>
 
 <body>
-    <div id="playingBoard">
+    <header>
+        <h1>Tic-Tac-Toe</h1>
+    </header>
+    <div id='playersFormContainer'>
+    <div id="playersForm">
         
+            <div id="Player-1-form" class=playersForm>
+                <div>First player (X):</div>
+                <div>
+                <label for="firstPlayerName">Name:</label>
+                <input type="text" id="firstPlayerName"><br>
+                </div>
+                <input type="radio" id="firstPlayerType" name="firstPlayerType" value="human" checked>
+                <label for="human">Human</label><br>
+                <input type="radio" id="firstPlayerType" name="firstPlayerType" value="computer">
+                <label for="human">Computer</label>
+            </div>
+       
+        
+            <div id='Player-2-form' class=playersForm>
+                <div>Second player (O):</div>
+                <div>
+                <label for="secondPlayerName">Name:</label>
+                <input type="text" id="secondPlayerName"><br>
+                </div>
+                <input type="radio" id="secondPlayerType" name="secondPlayerType" value="human" checked>
+                <label for="human">Human</label><br>
+                <input type="radio" id="secondPlayerType" name="secondPlayerType" value="computer">
+                <label for="human">Computer</label>
+            </div>
+
+            <button type="button" id="startGameButton">Start game</button>
+        
+    </div>
+    </div>
+    <div id="gameFormContainer">
+    <div id="gameForm">
+        <div id="playingBoard">
+    
+        </div>
+    <div id="gameButtons">
+        <button type="button" id="playAgainButton">Play again</button>
+        <button type="button" id="resetButton">Reset</button>
+    </div>
+    <div id="display"></div>
+    </div>
     </div>
 
 <script src="script.js"></script>
