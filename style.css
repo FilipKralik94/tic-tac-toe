@@ -48,6 +48,13 @@ button {
     justify-content: center;
 }
 
+.square {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    
+}
+
 .playersForm > div{
     padding-bottom:10px;
 }
